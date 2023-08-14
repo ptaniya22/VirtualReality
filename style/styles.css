@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM_Rg';
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url(../images/body_bgr.jpg)no-repeat center /cover;
+  /* background: rgba(17, 24, 39, 0.52); */
+  backdrop-filter: blur(33px);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* ------Header--------- */
+.header {
+  padding-top: 40px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-link {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+
+}
+
+.header-logo-text {
+  color: #FFF;
+  font-family: 'Rub_Md';
+  font-size: 20px;
+}
+
+.header__box-list {
+  display: flex;
+  gap: 60px;
+}
+
+.button {
+  border-radius: 5px;
+  background: var(--gardient, linear-gradient(91deg, #2563EB 0%, #D946EF 100%));
+}
+
+
+.header__box-item {
+
+  color: #F9FAFB;
+  font-family: 'DM_Md';
+  font-size: 14px;
+}
+
+.header__box-item.button {
+  padding: 12px 24px;
+}
+
+/* ------Header Content--------- */
+.header__content-active-link {
+  padding: 20px 40px;
+  color: #F9FAFB;
+  font-family: 'DM_Md';
+  font-size: 16px;
+}
+
+.header__content-title {
+  margin: 0 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+  font-family: 'DM_Bd';
+  font-size: 58px;
+  line-height: 84px;
+  /* 144.828% */
+  letter-spacing: 1.16px;
+  background: var(--gd, linear-gradient(88deg, #2563EB 0%, #D946EF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
+
+}
+
+.header__content-active {
+  display: flex;
+  gap: 30px;
+}
+
+.header__content-text {
+  /* max-width: 546px;
+  width: 100%; */
+  flex-basis: 45.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.header__content-active-watch {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header__content-watch-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #F9FAFB;
+  font-family: 'DM_Md';
+  font-size: 16px;
+
+}
+
+.header__content-info {
+  color: #E5E7EB;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+  font-family: 'DM_Md';
+  font-size: 15px;
+  line-height: 30px;
+  /* 200% */
+  opacity: 0.8;
+}
