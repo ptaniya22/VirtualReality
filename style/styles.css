@@ -759,3 +759,22 @@ body {
     max-width: 130px;
     width: 100%;
   }
+
+  .project-pic {
+    width: 290px;
+  }
+
+  .header__content-title {
+    font-size: 30px;
+    line-height: 35px;
+    padding-top: 30px;
+
+  }
+
+  .header__box-item.button {
+    padding: 8px 24px;
+  }
+
+  .header__box-item {
+    font-size: 10px;
+  }
