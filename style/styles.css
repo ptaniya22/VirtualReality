@@ -754,4 +754,8 @@ body {
   .footer__content-socnet {
     gap: 5px;
   }
-}
+
+  .team-item {
+    max-width: 130px;
+    width: 100%;
+  }
