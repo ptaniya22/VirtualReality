@@ -71,10 +71,10 @@ body {
 
 
 .header__box-item {
-
   color: #F9FAFB;
   font-family: 'DM_Md';
   font-size: 14px;
+  transition: all 300ms;
 }
 
 .header__box-item.button {
@@ -87,6 +87,13 @@ body {
   color: #F9FAFB;
   font-family: 'DM_Md';
   font-size: 16px;
+}
+
+.header__box-link {
+  padding: 12px 24px;
+  color: #F9FAFB;
+  font-family: 'DM_Md';
+  font-size: 14px;
 }
 
 .header__content-title {
@@ -302,7 +309,7 @@ body {
   display: inline-block;
   padding: 7px 14px;
   border-radius: 4px;
-  background: var(--gardient, linear-gradient(91deg, #2563EB 0%, #D946EF 100%));
+  /* background: var(--gardient, linear-gradient(91deg, #2563EB 0%, #D946EF 100%)); */
   color: #FFF;
   font-family: 'DM_Rg';
   font-size: 14px;
@@ -427,6 +434,7 @@ body {
   width: 100%;
   height: 80px;
   display: flex;
+  gap: 5px;
   justify-content: space-between;
   align-items: center;
   border-radius: 70px;
@@ -435,22 +443,26 @@ body {
 }
 
 .subscribe__form-text {
+  max-width: 600px;
+  color: white;
+  width: 100%;
   outline: none;
   border: none;
   background: none;
-  text-align: center;
+  text-align: left;
   font-family: 'Rub_Rg';
   font-size: 18px;
   line-height: 30px;
+  opacity: 0.9;
   /* 166.667% */
 }
 
 .subscribe__form-text::placeholder {
   color: #FFF;
-  opacity: 0.9;
 }
 
 .subscribe__form-btn {
+  border: none;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -506,21 +518,17 @@ body {
   display: flex;
   align-items: center;
   gap: 7px;
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .footer-logo-text.title {
-  padding-left: 6px;
+  /* padding-left: 6px; */
   color: #FFF;
   font-family: 'Rub_Md';
   font-weight: 500;
   font-size: 20px;
-}
-
-.footer-logo-link {
-  color: rgba(255, 255, 255, 0.80);
-  font-size: 16px;
-  line-height: 32px;
-  /* 200% */
 }
 
 .footer__content-socnet {
@@ -528,6 +536,10 @@ body {
   display: flex;
   gap: 15px;
 }
+
+/* .footer-socnet-pic {
+  fill: currentColor;
+} */
 
 .footer__list {
   display: flex;
@@ -560,13 +572,11 @@ body {
   font-size: 14px;
   line-height: 14px;
   /* 100% */
-
 }
 
 .footer__copywriter-list {
   display: flex;
   gap: 54px;
-
 }
 
 .footer__copywriter-link {
@@ -576,6 +586,68 @@ body {
   /* 100% */
 }
 
+.box-ico {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 300ms;
+}
+
+/* ----Hover Active Focus----- */
+
+.button:hover {
+  border-radius: 5px;
+  background: #2563EB;
+}
+
+.subscribe__form-btn-text:hover {
+  background: #2563EB;
+  border-radius: 70px;
+}
+
+.header__box-item:hover {
+  border-bottom: 3px solid;
+}
+
+.header-logo-link:hover,
+.header__content-watch-link:hover,
+.team-socnetlist-item-pic:hover {
+  transform: scale(1.2);
+}
+
+.box-ico:hover {
+  transform: scale(1.2);
+  background-color: #544b99;
+}
+
+.contact_ico:hover {
+  transform: scale(1.2);
+  fill: #544b99;
+}
+
+.service__card-link:hover p {
+  border-bottom: 1px solid;
+}
+
+.footer-logo-text.title:hover {
+  border-bottom: 1px solid;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+
+
+.subscribe__form-text::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+
+}
+
+/* --------------------------- */
 /* ------Adaptation--------- */
 @media (max-width:1200px) {
   .header__content-title {
@@ -642,11 +714,9 @@ body {
     width: 100%;
   }
 
-
   .header__box-list {
     row-gap: 20px;
   }
-
 }
 
 @media (max-width:600px) {
@@ -697,6 +767,14 @@ body {
 }
 
 @media (max-width:500px) {
+  .header__box-list {
+    gap: 40px;
+  }
+
+  .header__box-link {
+    padding: 6px 12px;
+  }
+
   .subscribe__form {
     max-width: 380px;
     height: 45px;
@@ -730,6 +808,10 @@ body {
 }
 
 @media (max-width:420px) {
+  .header__box-list {
+    gap: 17px;
+  }
+
   .subscribe__form-text {
     font-size: 12px;
   }
@@ -774,7 +856,4 @@ body {
   .header__box-item.button {
     padding: 8px 24px;
   }
-
-  .header__box-item {
-    font-size: 10px;
-  }
+}
