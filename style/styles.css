@@ -628,7 +628,8 @@ body {
   color: #544b99;
 }
 
-.footer-logo-link:hover {
+.footer-logo-link:hover,
+.footer__copywriter-link:hover {
   color: #544b99;
 }
 
