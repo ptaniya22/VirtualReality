@@ -67,6 +67,7 @@ body {
 .button {
   border-radius: 5px;
   background: var(--gardient, linear-gradient(91deg, #2563EB 0%, #D946EF 100%));
+  transition: all 500ms;
 }
 
 
@@ -458,13 +459,13 @@ body {
   font-family: 'Rub_Rg';
   font-size: 18px;
   line-height: 30px;
-  /* opacity: 0.5; */
+  opacity: 0.5;
   /* 166.667% */
 }
 
-.subscribe__form-text::placeholder {
-  opacity: 0.5;
-}
+/* .subscribe__form-text::placeholder {
+  opacity: 0.9;
+} */
 
 .subscribe__form-btn {
   border: none;
@@ -595,7 +596,7 @@ body {
   transition: all 300ms;
 }
 
-/* ----Hover Active Focus----- */
+/* ----Hover, Active, Focus----- */
 
 .button:hover {
   border-radius: 5px;
@@ -613,8 +614,7 @@ body {
 
 .header-logo-link:hover,
 .header__content-watch-link:hover,
-.team-socnetlist-item-pic:hover,
-.footer-logo-link.logo:hover {
+.team-socnetlist-item-pic:hover {
   transform: scale(1.2);
 }
 
@@ -640,6 +640,7 @@ body {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
+
 
 /* --------------------------- */
 /* ------Adaptation--------- */
