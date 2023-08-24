@@ -48,7 +48,7 @@ body {
   display: flex;
   gap: 7px;
   align-items: center;
-
+  transition: all 300ms;
 }
 
 .header-logo-text {
@@ -87,6 +87,7 @@ body {
   color: #F9FAFB;
   font-family: 'DM_Md';
   font-size: 16px;
+  transition: all 500ms;
 }
 
 .header__box-link {
@@ -94,6 +95,8 @@ body {
   color: #F9FAFB;
   font-family: 'DM_Md';
   font-size: 14px;
+  transition: all 500ms;
+
 }
 
 .header__content-title {
@@ -150,6 +153,7 @@ body {
   color: #F9FAFB;
   font-family: 'DM_Md';
   font-size: 16px;
+  transition: all 300ms;
 
 }
 
@@ -313,6 +317,7 @@ body {
   color: #FFF;
   font-family: 'DM_Rg';
   font-size: 14px;
+  transition: all 500ms;
 }
 
 .project-item-textbox {
@@ -453,12 +458,12 @@ body {
   font-family: 'Rub_Rg';
   font-size: 18px;
   line-height: 30px;
-  opacity: 0.9;
+  /* opacity: 0.5; */
   /* 166.667% */
 }
 
 .subscribe__form-text::placeholder {
-  color: #FFF;
+  opacity: 0.5;
 }
 
 .subscribe__form-btn {
@@ -473,15 +478,14 @@ body {
 }
 
 .subscribe__form-btn-text {
-
   padding: 15px 49px;
-
   color: #FFF;
   text-align: center;
   font-family: 'Rub_Md';
   font-size: 20px;
   line-height: 30px;
   /* 150% */
+  transition: all 500ms;
 }
 
 .subscribe__form-btn-text::before {
@@ -521,6 +525,7 @@ body {
   color: rgba(255, 255, 255, 0.80);
   font-size: 16px;
   line-height: 32px;
+  transition: all 300ms;
 }
 
 .footer-logo-text.title {
@@ -537,15 +542,10 @@ body {
   gap: 15px;
 }
 
-/* .footer-socnet-pic {
-  fill: currentColor;
-} */
-
 .footer__list {
   display: flex;
   flex-direction: column;
   gap: 13px;
-
 }
 
 .line {
@@ -613,7 +613,8 @@ body {
 
 .header-logo-link:hover,
 .header__content-watch-link:hover,
-.team-socnetlist-item-pic:hover {
+.team-socnetlist-item-pic:hover,
+.footer-logo-link.logo:hover {
   transform: scale(1.2);
 }
 
@@ -622,29 +623,22 @@ body {
   background-color: #544b99;
 }
 
-.contact_ico:hover {
+.footer-logo-link:hover .contact_ico {
   transform: scale(1.2);
-  fill: #544b99;
+  color: #544b99;
 }
 
-.service__card-link:hover p {
-  border-bottom: 1px solid;
-}
-
-.footer-logo-text.title:hover {
-  border-bottom: 1px solid;
+.footer-logo-link:hover {
+  color: #544b99;
 }
 
 :focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-
-
 .subscribe__form-text::-webkit-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
-
 }
 
 /* --------------------------- */
