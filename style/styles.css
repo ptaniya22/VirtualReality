@@ -66,7 +66,7 @@ body {
 
 .button {
   border-radius: 5px;
-  background: var(--gardient, linear-gradient(91deg, #2563EB 0%, #D946EF 100%));
+  background: linear-gradient(270deg, #d946ef, #2563eb, #923283) 0 0/200%;
   transition: all 500ms;
 }
 
@@ -474,12 +474,14 @@ body {
   gap: 8px;
   border-radius: 70px;
   opacity: 0.9;
-  background: var(--gardient, linear-gradient(91deg, #2563EB 0%, #D946EF 100%));
+  background: linear-gradient(270deg, #d946ef, #2563eb, #923283) 0 0/200%;
   position: relative;
+  transition: all 500ms;
 }
 
 .subscribe__form-btn-text {
   padding: 15px 49px;
+  border-radius: 70px;
   color: #FFF;
   text-align: center;
   font-family: 'Rub_Md';
@@ -558,7 +560,7 @@ body {
   background: #969696;
 }
 
-.copywriter-box {
+.copyright-box {
   display: flex;
   padding-top: 36px;
   align-items: center;
@@ -567,7 +569,7 @@ body {
 
 }
 
-.footer__copywriter-name {
+.footer__copyright-name {
   color: rgba(255, 255, 255, 0.80);
   font-family: 'Rub_Rg';
   font-size: 14px;
@@ -575,12 +577,12 @@ body {
   /* 100% */
 }
 
-.footer__copywriter-list {
+.footer__copyright-list {
   display: flex;
   gap: 54px;
 }
 
-.footer__copywriter-link {
+.footer__copyright-link {
   color: rgba(255, 255, 255, 0.80);
   font-size: 14px;
   line-height: 14px;
@@ -600,11 +602,12 @@ body {
 
 .button:hover {
   border-radius: 5px;
-  background: #2563EB;
+  background-position: 100%;
 }
 
-.subscribe__form-btn-text:hover {
-  background: #2563EB;
+.subscribe__form-btn:hover {
+  cursor: pointer;
+  background-position: 100%;
   border-radius: 70px;
 }
 
@@ -629,7 +632,7 @@ body {
 }
 
 .footer-logo-link:hover,
-.footer__copywriter-link:hover {
+.footer__copyright-link:hover {
   color: #544b99;
 }
 
@@ -721,7 +724,6 @@ body {
   }
 
   .subscribe__form {
-
     max-width: 450px;
     height: 45px;
   }
@@ -755,7 +757,7 @@ body {
     column-gap: 20px;
   }
 
-  .copywriter-box {
+  .copyright-box {
     gap: 30px;
     justify-content: center;
     row-gap: 20px;
@@ -813,7 +815,6 @@ body {
   }
 
   .subscribe__form {
-
     max-width: 290px;
     height: 35px;
   }
